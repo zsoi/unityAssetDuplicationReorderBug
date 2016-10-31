@@ -1,0 +1,12 @@
+The editor will reorder (sub-)assets when duplicating them
+
+1) Create a new "NestedAsset" by opening the asset database context menu and choosing "Create/>> NESTED ASSET"
+2) Inspect the freshly created asset in the root of the asset database. The "MainAssetType" instance is selected when clicking on the asset and you can expand the list of the referenced sub-assets. Those can also be inspected by expanding the asset in the asset database
+3) Select the NestedAsset in the database and duplicate it (CTRL+D or context menu, doesn't matter)
+4) Inspect the new copy of the asset. When selected, it will no longer show the "MainAssetType" instance as the main asset, but it is now somewhere nested inside the asset
+
+Notes:
+- You can also diff the asset files and see that there is no difference in them
+- Duplicating the asset (without the meta file) in the OS file manager will result in the same outcome.
+- Reimporting the whole asset database will not change the nesting/order
+
